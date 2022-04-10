@@ -50,6 +50,7 @@ body {
     margin-bottom: 0;}
 /* Шапка */
 .logo {
+    display: inline-block;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -169,7 +170,10 @@ text-align: center;
 }
 /* Футер */
 .logo.web.footer {
+    margin-top: 0;
     margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .location {
     color: var(--white-title-color);
@@ -189,6 +193,8 @@ text-decoration: none;
 }
 .footer {
     background-color: var(--hero-footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo.white {
