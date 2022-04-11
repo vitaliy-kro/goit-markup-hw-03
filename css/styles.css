@@ -47,7 +47,9 @@ body {
 .list {
     list-style-type: none;
     margin-top: 0;
-    margin-bottom: 0;}
+    margin-bottom: 0;
+    padding-left: 0;
+}
 /* Шапка */
 .logo {
     display: inline-block;
@@ -90,6 +92,8 @@ color: var(--accent-color);
 .hero {
     background-color: var(--hero-footer-background);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title {
     color: var(--white-title-color);
@@ -203,8 +207,8 @@ text-decoration: none;
 
 /* Portfolio  */
 .products-portfolio {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .product-button {
     color: var(--title-text-color);
