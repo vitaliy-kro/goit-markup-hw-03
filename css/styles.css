@@ -274,10 +274,13 @@ body {
   display: flex;
 }
 .product-button {
+  margin-left: 9px;
+
   color: var(--title-text-color);
   background-color: var(--product-button-color);
-
+  border: initial;
   border-radius: 4px;
+
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
