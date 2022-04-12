@@ -244,6 +244,11 @@ body {
   text-align: center;
 }
 /* Футер */
+.footer {
+  background-color: var(--hero-footer-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .logo.web.footer {
   margin-top: 0;
   margin-bottom: 20px;
@@ -265,14 +270,12 @@ body {
   line-height: 1.71;
   text-decoration: none;
 }
+.footer-link.number {
+  margin-bottom: 0;
+}
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
-}
-.footer {
-  background-color: var(--hero-footer-background);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .logo.white {
