@@ -38,8 +38,6 @@ body {
 }
 .header {
   background-color: var(--main-background-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
   border: 1px solid var(--header-border-color);
 }
 .container {
@@ -67,6 +65,8 @@ body {
 }
 .logo.web {
   color: var(--accent-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo.studio {
   color: var(--logo-color);
@@ -129,6 +129,9 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+.hero > .container {
+  width: 696px;
+}
 .hero-title {
   color: var(--white-title-color);
   margin-top: 0;
@@ -165,6 +168,9 @@ body {
 .preferences {
   display: flex;
 }
+.preferences .item {
+  width: 270px;
+}
 .preferences .item + .item {
   margin-left: 30px;
 }
@@ -190,6 +196,8 @@ body {
 }
 .work-process {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .workers {
@@ -223,10 +231,15 @@ body {
   box-shadow: var(--workers-card-shadow);
   border-radius: 0px 0px 4px 4px;
 }
-
-.workers-information .workers-photo {
+.workers-information:first-child {
+  margin-left: 0;
+}
+.workers-photo {
   display: block;
-  margin-bottom: 30px;
+}
+.workers-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .workers-name {
   margin-bottom: 10px;
@@ -238,7 +251,6 @@ body {
 .position {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -263,15 +275,10 @@ body {
   line-height: 1.71;
 }
 .footer-link {
-  margin-bottom: 9px;
-
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   line-height: 1.71;
   text-decoration: none;
-}
-.footer-link.number {
-  margin-bottom: 0;
 }
 .footer-link:hover,
 .footer-link:focus {
@@ -280,6 +287,9 @@ body {
 
 .logo.white {
   color: var(--white-title-color);
+}
+.footer-mail {
+  margin-bottom: 9px;
 }
 
 /* Portfolio  */
@@ -292,9 +302,11 @@ body {
   margin-bottom: 50px;
   justify-content: center;
 }
+.products.list.buttons > .item:not(:first-child) {
+  margin-left: 9px;
+}
 .product-button {
-  margin-left: 8px;
-  padding: 6px 32px;
+  padding: 6px 22px;
 
   color: var(--title-text-color);
   background-color: var(--product-button-color);
