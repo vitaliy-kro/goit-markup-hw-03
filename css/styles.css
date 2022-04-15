@@ -75,9 +75,11 @@ body {
   display: flex;
   align-items: center;
 }
+.navigation {
+  margin-left: 93px;
+}
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 .site-nav .item + .item {
   margin-left: 50px;
